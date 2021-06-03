@@ -20,5 +20,10 @@ public class FoodForward : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        if (transform.position.z < -10)
+        {
+            Debug.Log("Game Over!");
+        }
     }
 }
