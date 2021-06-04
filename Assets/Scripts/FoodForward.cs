@@ -16,14 +16,5 @@ public class FoodForward : MonoBehaviour
     void Update()
     {
         transform.Translate(transform.forward * speed * Time.deltaTime);
-        if (Math.Abs(transform.position.z) > 50)
-        {
-            Destroy(gameObject);
-        }
-        
-        if (transform.position.z < -10)
-        {
-            Debug.Log("Game Over!");
-        }
     }
 }
